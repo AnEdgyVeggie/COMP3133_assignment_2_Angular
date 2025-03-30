@@ -6,17 +6,17 @@
     <form #register_form="ngForm" (ngSubmit)="onSubmit(register_form)" >       
         <div>
             <label for="register-email" >Email</label>
-            <input type="text" name="register-email" id="register-email" ngModel />
+            <input type="text" name="register-email" id="register-email" ngModel required />
         </div>
         
         <div>
             <label for="register-username" >Username</label>
-            <input type="text" name="register-username" id="register-username" ngModel />
+            <input type="text" name="register-username" id="register-username" ngModel required />
         </div>
 
         <div>
             <label for="register-password" >Password</label>
-            <input type="password" name="register-password" id="register-password" ngModel />
+            <input type="password" name="register-password" id="register-password" ngModel required />
         </div>
         
         <div>

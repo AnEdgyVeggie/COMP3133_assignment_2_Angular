@@ -5,13 +5,13 @@
     <form #login_form="ngForm" (ngSubmit)="onSubmit(login_form)" >    
         <div>
             <label for="login-username" >Email / Username</label>
-            <input type="text" name="login-username" id="login-username" ngModel />
+            <input type="text" name="login-username" id="login-username" ngModel required />
         </div>
         
         
         <div>
             <label for="login-password" >Password</label>
-            <input type="password" name="login-password" id="login-password" ngModel />
+            <input type="password" name="login-password" id="login-password" ngModel required />
         </div>
         
         <div>

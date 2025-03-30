@@ -113,7 +113,7 @@ export class EmployeeListComponent {
           first_name
           last_name
           email
-          gender6
+          gender
           designation
           salary
           date_of_joining

@@ -4,7 +4,7 @@ import { Apollo, APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 
 
-const uri = 'http://localhost:5000'; // <-- add the URL of the GraphQL server here
+const uri = 'https://one01479568-comp3133.onrender.com'; // <-- add the URL of the GraphQL server here
 export function apolloOptionsFactory(): ApolloClientOptions<any> {
   const httpLink = inject(HttpLink);
   return {
