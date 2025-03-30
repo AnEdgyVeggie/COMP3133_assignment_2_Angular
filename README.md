@@ -15,16 +15,16 @@
     - search employees by designation
 
 ## Front End: 
-    ### Deployed at: 
-    - https://comp3133-assignment-2.web.app/employee-app/list
+### Deployed at: 
+- https://comp3133-assignment-2.web.app/employee-app/list
 
-    ### Github:
-    - https://github.com/AnEdgyVeggie/COMP3133_assignment_2_Angular
+### Github:
+- https://github.com/AnEdgyVeggie/COMP3133_assignment_2_Angular
 
 ## Back End: 
-    ### Deployed at: 
-    - https://one01479568-comp3133.onrender.com/
+### Deployed at: 
+- https://one01479568-comp3133.onrender.com/
 
-    ### Github:
-    - https://github.com/AnEdgyVeggie/101479568_COMP3133_Assignment1-
+### Github:
+- https://github.com/AnEdgyVeggie/101479568_COMP3133_Assignment1-
 
