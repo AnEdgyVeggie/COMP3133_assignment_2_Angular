@@ -1,0 +1,63 @@
+<div id="emp-app-comp">
+
+    <h2>Add Employee</h2>
+
+    <form #employee_add="ngForm" (ngSubmit)="onSubmit(employee_add)" >    
+
+        <div>    
+            <label for="first-name">First Name</label>
+            <input name="first-name" id="first-name" type="text" ngModel/>
+        </div>
+        <div>    
+            <label for="last-name">Last Name</label>
+            <input name="last-name" id="last-name" type="text" ngModel/>
+        </div>
+
+        <div>    
+            <label for="email">Email</label>
+            <input name="email" id="email" type="text" ngModel/>
+        </div>
+
+        <div>    
+            <label for="gender">Gender</label>
+            <select ngModel name="gender">
+                <option>male</option>
+                <option>female</option>
+                <option>other</option>
+            </select>
+        </div>
+
+        <div>    
+            <label for="department">Department</label>
+            <input name="department" id="department" type="text" ngModel/>
+        </div>
+
+        <div>    
+            <label for="designation">Designation</label>
+            <input name="designation" id="designation" type="text" ngModel/>
+        </div>
+
+        <div>    
+            <label for="salary">Salary</label>
+            <input name="salary" id="salary" type="text" ngModel/>
+        </div>
+
+        <div>    
+            <label for="photo-upload">Employee Photo</label>
+            <div id="custom-file-input">
+                
+                <input name="photo-upload" id="photo-upload" type="file" ngModel/>
+                <p id="upload-p">Click Here to Upload File</p>
+            </div>
+        </div>
+
+
+
+        <div id="add-emp-buttons">
+            <a [routerLink]="['/employee-app/list']">Cancel</a>
+            <button>Add Employee</button>
+        </div>
+
+    </form>
+
+</div>

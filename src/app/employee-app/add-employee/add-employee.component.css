@@ -1,0 +1,79 @@
+#emp-app-comp {
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+    height: 98vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#emp-app-comp h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 550px;
+    height: 600px;
+    padding: 20px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+form input, form select {
+    border: 1px solid black;
+    width: 250px;
+}
+#photo-upload {
+    /* display: none; */
+
+    opacity: 0;
+}
+#upload-p {
+    font-size: 18px;
+    position: absolute;
+    margin-left: 10px;
+    z-index: -1;
+
+}
+#custom-file-input {
+    border: 1px solid black;
+    width: 250px;
+}
+
+#add-emp-buttons button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 1px black,
+    -2px 2px 1px black;
+    background-color: rgb(6, 173, 224);
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+#add-emp-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: -1px 1px 1px black,
+    -2px 2px 1px black,
+    -3px 3px 1px black;
+    background-color: rgb(6, 173, 224);
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(235, 0, 59);
+}

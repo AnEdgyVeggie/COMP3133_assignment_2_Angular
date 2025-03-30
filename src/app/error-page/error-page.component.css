@@ -1,0 +1,38 @@
+#error-comp {
+    display: flex;
+    flex-direction: column;
+    height: 90.5vh;
+    align-items: center;
+    margin-top: 120px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#error-header {
+    padding-left: 200px;
+    border-bottom: 6px solid black;
+    width: 100%;
+
+}
+
+#error-header h2 {
+    font-size: 128px;
+}
+
+#error-display{
+    padding-left: 200px;
+    padding-top: 20px;
+    color: white;
+    background-image: linear-gradient(rgb(10, 10, 10),
+    rgb(10, 10, 10),
+    rgb(10, 10, 10),
+    rgb(10, 10, 10),
+    rgb(22, 22, 22),
+    rgb(27, 27, 27), rgb(185, 185, 185));
+    height: 100%;
+    width: 100%;
+}
+
+#error-display {
+    font-size: 22px;
+}

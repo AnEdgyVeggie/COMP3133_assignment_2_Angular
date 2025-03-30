@@ -1,0 +1,64 @@
+<div id="emp-app-comp">
+
+    <h2>Update Employee</h2>
+
+    <form #employee_update="ngForm" (ngSubmit)="onSubmit(employee_update)" >    
+
+        <div>    
+            <label for="first-name">First Name</label>
+            <input name="first-name" id="first-name" type="text" ngModel placeholder={{employee.first_name}} />
+        </div>
+        <div>    
+            <label for="last-name">Last Name</label>
+            <input name="last-name" id="last-name" type="text" ngModel placeholder={{employee.last_name}} />
+        </div>
+
+        <div>    
+            <label for="email">Email</label>
+            <input name="email" id="email" type="text" ngModel placeholder={{employee.email}} />
+        </div>
+
+        <div>    
+            <label for="gender">Gender</label>
+            <select ngModel name="gender">
+                <option>male</option>
+                <option>female</option>
+                <option>other</option>
+            </select>
+        </div>
+
+
+        <div>    
+            <label for="department">Department</label>
+            <input name="department" id="department" type="text" ngModel placeholder={{employee.department}} />
+        </div>
+
+        <div>    
+            <label for="designation">Designation</label>
+            <input name="designation" id="designation" type="text" ngModel placeholder={{employee.designation}} />
+        </div>
+
+        <div>    
+            <label for="salary">Salary</label>
+            <input name="salary" id="salary" type="text" ngModel placeholder={{employee.salary}} />
+        </div>
+
+        <div>    
+            <label for="photo-upload">Employee Photo</label>
+            <div id="custom-file-input">
+                
+                <input name="photo-upload" id="photo-upload" type="file" ngModel/>
+                <p id="upload-p">Click Here to Upload File</p>
+            </div>
+        </div>
+
+
+
+        <div id="update-emp-buttons">
+            <a [routerLink]="['/employee-app/list']">Cancel</a>
+            <button>Update Employee</button>
+        </div>
+
+    </form>
+
+</div>

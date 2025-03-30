@@ -1,0 +1,59 @@
+#view-emp-comp {
+
+    width: 99vw;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#view-emp-comp h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#view-emp-info {
+    display: flex;
+    flex-direction: column;
+    padding:  20px;
+    border: 1px solid black;
+    width: 550px;
+    height: 600px;
+    box-shadow: 0 0 10px black;
+    justify-content: space-evenly;
+}
+
+#view-emp-info div{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted black;
+
+}
+
+#return-btn {
+    margin-top: 40px;
+}
+
+
+#return-btn a {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(0, 226, 151), rgb(0, 190, 41));
+    text-decoration: none;
+    color: black;
+    padding:  10px;
+    border: 2px solid black;
+    box-shadow: -1px 1px 1px black,
+    -2px 2px 1px black,
+    -3px 3px 1px black,
+    -4px 4px 1px black;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 22px;
+}

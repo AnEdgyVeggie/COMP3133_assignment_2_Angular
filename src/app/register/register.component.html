@@ -1,0 +1,28 @@
+<div id="register-comp">
+
+    
+    <h2>Register</h2>
+
+    <form #register_form="ngForm" (ngSubmit)="onSubmit(register_form)" >       
+        <div>
+            <label for="register-email" >Email</label>
+            <input type="text" name="register-email" id="register-email" ngModel />
+        </div>
+        
+        <div>
+            <label for="register-username" >Username</label>
+            <input type="text" name="register-username" id="register-username" ngModel />
+        </div>
+
+        <div>
+            <label for="register-password" >Password</label>
+            <input type="password" name="register-password" id="register-password" ngModel />
+        </div>
+        
+        <div>
+            <button>Register</button>
+        </div>
+        
+    </form>
+
+</div>

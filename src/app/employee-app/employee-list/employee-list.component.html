@@ -1,0 +1,54 @@
+<div id="emp-app-comp">
+    
+    <h2>Employees List</h2>
+    
+    <div id="emp-app-search-bar">
+        <form #search="ngForm" (ngSubmit)="filterEmployees(search)" >    
+            
+            <input type="text" name="search-string" ngModel />
+            <select name="search-type" ngModel >
+                <option>Department</option>
+                <option>Designation</option>
+            </select>
+            <button>Search</button>
+        </form>
+        
+        
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <td>Employee First Name</td>
+                <td>Employee Last Name</td>
+                <td>Department</td>
+                <td>Designation</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.first_name}}</td>
+                <td>{{employee.last_name}}</td>
+                <td>{{employee.department}}</td>
+                <td>{{employee.designation}}</td>
+                <td>
+                    <span class="employee-btns">
+                        <button (click)="updateEmployee(employee._id)" >Update</button>
+                        <button (click)="deleteEmployee(employee._id)" >Delete</button>
+                        <button (click)="viewEmployee(employee._id)" >View</button>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div id="add-btn">
+        <button (click)="fetchEmployees()" >Clear Search</button>
+        <a [routerLink]="['/employee-app/add']">Add Employee</a>
+    </div>
+    <div id="logout-section">
+        <button (click)="logout()" >Log out</button>
+    </div>
+</div>

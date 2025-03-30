@@ -1,0 +1,57 @@
+<div id="view-emp-comp">
+
+    <h2>View Employee Information</h2>
+    <h2>{{employee.first_name}} {{employee.last_name}}</h2>
+    <div id="view-emp-info">
+        
+        <div>
+            <p>First Name</p>
+            <p>{{employee.first_name}}</p>
+        </div>
+
+        <div>
+            <p>Last Name</p>
+            <p>{{employee.last_name}}</p>
+        </div>
+
+        <div>
+            <p>Gender</p>
+            <p>{{employee.gender}}</p>
+        </div>
+
+        <div>
+            <p>Hired</p>
+            <p>{{createdDate}}</p>
+        </div>
+
+        <div>
+            <p>Email</p>
+            <p>{{employee.email}}</p>
+        </div>
+
+        <div>
+            <p>Department</p>
+            <p>{{employee.department}}</p>
+        </div>
+
+        <div>
+            <p>Designation</p>
+            <p>{{employee.designation}}</p>
+        </div>
+
+        <div>
+            <p>Salary</p>
+            <p>${{employee.salary}}</p>
+        </div>
+
+        <div>
+            <p>Updated Last</p>
+            <p>{{updatedDate}}</p>
+        </div>
+
+    </div>
+    <div id="return-btn">
+        <a [routerLink]="['/employee-app/list']" >Return to List</a>
+    </div>
+
+</div>

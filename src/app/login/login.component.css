@@ -1,0 +1,56 @@
+#login-comp {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-comp h2 {
+    font-size: 32px;
+    margin-right: 380px;
+    margin-bottom: -20px;
+    background-color: white;
+    /* box-shadow: 0 0 10px; */
+    /* padding: 0 10px; */
+    z-index: 2;
+
+}
+
+#login-comp form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 550px;
+    height: 600px;
+    box-shadow: 0 0 10px;
+}
+
+#login-comp form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+
+
+#login-comp form label {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+#login-comp form input {
+    font-size: 22px;
+}
+
+#login-comp form button {
+    border: 1px solid black;
+    background-color: white;
+    width: 160px;
+    height: 60px;
+    font-size: 22px;
+    box-shadow: 0 0 3px;
+
+}

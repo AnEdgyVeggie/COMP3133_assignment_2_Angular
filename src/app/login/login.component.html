@@ -1,0 +1,24 @@
+<div id="login-comp">
+
+    
+    <h2>Login</h2>
+    <form #login_form="ngForm" (ngSubmit)="onSubmit(login_form)" >    
+        <div>
+            <label for="login-username" >Email / Username</label>
+            <input type="text" name="login-username" id="login-username" ngModel />
+        </div>
+        
+        
+        <div>
+            <label for="login-password" >Password</label>
+            <input type="password" name="login-password" id="login-password" ngModel />
+        </div>
+        
+        <div>
+            <button>Login</button>
+        </div>
+        
+        
+    </form>
+
+</div>
